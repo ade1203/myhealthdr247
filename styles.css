@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  border-bottom: 3px solid #ffc107;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffc107;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #ffc107;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffc107;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Register button hover */
+nav a.register {
+  background-color: black;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a.register:hover {
+  background-color: #ffc107;
+  color: black;
+}
+
+nav a.login {
+  background-color: #ffc107;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Welcome Section */
+.welcome {
+  position: relative;
+  text-align: center;
+  color: #ffc107;
+}
+
+.welcome .background-image {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: white;
+  text-align: left;
+}
+
+.welcome-text h1 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.welcome-text p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.overlay-images {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  display: flex;
+  gap: 15px;
+}
+
+.overlay-images img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #ffc107;
+  object-fit: cover;
+}
+
+/* Login Section */
+.login-section {
+  padding: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.login-box {
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-box p {
+  font-size: 14px;
+  color: #777;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 12px;
+  background-color: #ffc107;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #e0a800;
+}
+
+.btn-google,
+.btn-facebook {
+  background-color: #ddd;
+  color: black;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-google:hover {
+  background-color: #db4437;
+  color: white;
+}
+
+.btn-facebook:hover {
+  background-color: #3b5998;
+  color: white;
+}
+
+/* Footer Section */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.cookies {
+  margin-bottom: 15px;
+}
+
+.cookie-buttons {
+  margin-top: 10px;
+}
+
+.cookie-buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cookie-buttons .btn-accept {
+  background-color: #ffc107;
+  color: white;
+}
+
+.cookie-buttons .btn-reject {
+  background-color: red;
+  color: white;
+}
